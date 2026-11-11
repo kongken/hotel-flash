@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "data": "node scripts/convert-xlsx.mjs",
+    "data": "node scripts/convert-xlsx.mjs && node scripts/convert-products.mjs",
     "predev": "npm run data",
     "dev": "vite",
     "prebuild": "npm run data",

@@ -9,7 +9,7 @@ npm install
 npm run dev
 ```
 
-`predev` / `prebuild` 会自动把 `hotel-coupon.xlsx` 转成 `src/data/coupons.json`。
+`predev` / `prebuild` 会自动把 `hotel-coupon.xlsx` 转成 `src/data/coupons.json`，并把 `data/flypig-hotels-products.csv` 与 `data/flypig-hotels-skus.csv` 转成 `src/data/products.json`。
 
 单独更新数据：
 
@@ -44,4 +44,4 @@ npx wrangler pages deploy dist --project-name=hotel-flash
 
 ## 更新红包数据
 
-替换根目录的 `hotel-coupon.xlsx`，重新部署（或本地 `npm run data` 后提交生成的 JSON）。
+替换根目录的 `hotel-coupon.xlsx`，或更新 `data/flypig-hotels-products.csv` / `data/flypig-hotels-skus.csv`，重新部署（或本地 `npm run data` 后提交生成的 JSON）。页面顶部可以切换「酒店红包」和「飞猪套餐」两类数据。
